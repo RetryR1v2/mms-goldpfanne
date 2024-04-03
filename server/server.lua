@@ -34,7 +34,7 @@ exports.vorp_inventory:registerUsableItem(Config.GoldPanItem, function(data)
     TriggerClientEvent('mms-goldpfanne:client:startgoldpfanne',source)
 end)
 
-function keysx(table)
+local function keysx(table)
     local keys = 0
     for k,v in pairs(table) do
        keys = keys + 1
